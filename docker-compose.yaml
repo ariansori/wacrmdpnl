@@ -12,8 +12,8 @@ services:
     environment:
       - DB_HOST=mysql
       - DB_USER=root
-      - DB_PASS=${MYSQL_ROOT_PASSWORD:-strongpassword}
-      - DB_NAME=${MYSQL_DATABASE:-whaticket}
+      - DB_PASS=${MYSQL_ROOT_PASSWORD:-devgadungan2025}
+      - DB_NAME=${MYSQL_DATABASE:-new_whaticket}
       - JWT_SECRET=${JWT_SECRET:-3123123213123}
       - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET:-75756756756}
       - BACKEND_URL=${BACKEND_URL:-http://localhost}
@@ -52,8 +52,8 @@ services:
     volumes:
       - ./.docker/data/:/var/lib/mysql
     environment:
-      - MYSQL_DATABASE=${MYSQL_DATABASE:-whaticket}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-strongpassword}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-new_whaticket}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-devgadungan2025}
       - TZ=${TZ:-America/Fortaleza}
     ports:
       - ${MYSQL_PORT:-3306}:3306
